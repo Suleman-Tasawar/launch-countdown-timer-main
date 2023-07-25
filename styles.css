@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  position: relative;
+  background: url("images/bg-stars.svg") hsl(234, 17%, 12%) center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.count--down {
+  height: 100vh;
+  margin-top: 4rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.launch--contact {
+  width: 100vh;
+  background: url("images/pattern-hills.svg") repeat-x center;
+}
+.launch--timer,
+.launch--contact {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.launch--contact {
+  height: 200px;
+}
+/*Typography*/
+
+.launch--info {
+  margin-top: 5rem;
+}
+.launch--text > h1 {
+  color: hsl(0, 0%, 100%);
+}
+
+.launch--timer {
+  margin-top: 5rem;
+}
+
+.time--text {
+  text-align: center;
+  color: hsl(237, 18%, 59%);
+}
+
+.time--text > p {
+  margin: 1rem;
+}
+.time {
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 1rem;
+  font-weight: 700;
+  font-size: 50px;
+  color: hsl(345, 95%, 68%);
+  margin-left: 2rem;
+  background-color: hsl(236, 21%, 26%);
+  width: 100px;
+  height: 100px;
+}
+/*Socials*/
+
+.contact {
+  cursor: pointer;
+  margin-left: 1.5rem;
+}
