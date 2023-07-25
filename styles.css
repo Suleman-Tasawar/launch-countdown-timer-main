@@ -6,9 +6,17 @@
   font-family: "Red Hat Display", sans-serif;
 }
 
+:root {
+  --Grayish-blue: hsl(237, 18%, 59%);
+  --Soft-red: hsl(345, 95%, 68%);
+  --White-color: hsl(0, 0%, 100%);
+  --Dark-desaturated-blue: hsl(236, 21%, 26%);
+  --Very-dark-blue: hsl(235, 16%, 14%);
+}
+
 body {
   position: relative;
-  background: url("images/bg-stars.svg") hsl(234, 17%, 12%) center;
+  background: url("images/bg-stars.svg") var(--Very-dark-blue) center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,56 +32,69 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
 .launch--contact {
-  width: 100vh;
+  width: 143vh;
   background: url("images/pattern-hills.svg") repeat-x center;
 }
+
 .launch--timer,
 .launch--contact {
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
 }
 
 .launch--contact {
-  height: 200px;
+  justify-content: center;
+  height: 197px;
 }
-/*Typography*/
+
+/* Typography */
 
 .launch--info {
   margin-top: 5rem;
 }
+
 .launch--text > h1 {
-  color: hsl(0, 0%, 100%);
+  color: var(--White-color);
 }
 
 .launch--timer {
+  justify-content: space-evenly;
   margin-top: 5rem;
 }
 
 .time--text {
   text-align: center;
-  color: hsl(237, 18%, 59%);
+  color: var(--Grayish-blue);
 }
 
 .time--text > p {
-  margin: 1rem;
+  margin-top: 1rem;
 }
+
 .time {
   border-radius: 10px;
   text-align: center;
   padding-top: 1rem;
   font-weight: 700;
   font-size: 50px;
-  color: hsl(345, 95%, 68%);
+  color: var(--Soft-red);
   margin-left: 2rem;
-  background-color: hsl(236, 21%, 26%);
+  background-color: var(--Dark-desaturated-blue);
   width: 100px;
   height: 100px;
 }
-/*Socials*/
+
+/* Socials */
 
 .contact {
+  width: 30px;
+  height: 30px;
   cursor: pointer;
   margin-left: 1.5rem;
+}
+
+.contact svg:hover {
+  fill: var(--Soft-red);
 }
